@@ -380,7 +380,20 @@
 								<ButtonState>LeftButton</ButtonState>
 							</Connection>
 						</PushButton>
-
+						<Label>
+							<Style>
+														QLabel {
+															font: bold 8px sans-serif;
+															font-family: "Open Sans";
+															background-color: transparent;
+															color: #191F24;
+															text-align:center;
+															}
+							</Style>
+							<Pos>117,43</Pos>
+							<Size>20,10</Size>
+							<Text>AUTO</Text>
+						 </Label>
 						<!--
 						**********************************************
 						PLF FX Button
