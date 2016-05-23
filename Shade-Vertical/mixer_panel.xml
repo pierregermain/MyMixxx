@@ -333,6 +333,8 @@
 							</Connection>
 						</PushButton>
 
+
+
 						<PushButton>
 							<TooltipId></TooltipId>
 							<Style></Style>
@@ -350,6 +352,31 @@
 							<Pos>230,57</Pos>
 							<Connection>
 								<ConfigKey>[EffectRack1_EffectUnit2],group_[BusRight]_enable</ConfigKey>
+								<ButtonState>LeftButton</ButtonState>
+							</Connection>
+						</PushButton>
+
+						**********************************************
+						AutoDJ Button
+						**********************************************
+						-->
+						<PushButton>
+							<TooltipId></TooltipId>
+							<Style></Style>
+							<NumberStates>2</NumberStates>
+							<State>
+								<Number>0</Number>
+								<Pressed>btn_kill_down.png</Pressed>
+								<Unpressed>btn_kill.png</Unpressed>
+							</State>
+							<State>
+								<Number>1</Number>
+								<Pressed>btn_kill_overdown.png</Pressed>
+								<Unpressed>btn_kill_over.png</Unpressed>
+							</State>
+							<Pos>120,57</Pos>
+							<Connection>
+								<ConfigKey>[AutoDJ],enabled</ConfigKey>
 								<ButtonState>LeftButton</ButtonState>
 							</Connection>
 						</PushButton>
@@ -579,7 +606,6 @@
 							<CustomFormat>hh:mm</CustomFormat>
 							<ShowSeconds>false</ShowSeconds>
 						</Time>
-
 						<StatusLight>
 							<Pos>113,27</Pos>
 							<TooltipId>audio_latency_usage</TooltipId>
@@ -612,7 +638,7 @@
 								<ConfigKey>[Master],audio_latency_usage</ConfigKey>
 							</Connection>
 						</VuMeter>
-						
+
 					    <PushButton>
 							<Style></Style>
 							<NumberStates>4</NumberStates>
